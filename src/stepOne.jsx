@@ -18,7 +18,7 @@ const StepOne = ({nextStep}) => {
     };
     return (
         <>
-            <img src={star} className={'rateStar'}/>
+            <img alt={''} src={star} className={'rateStar'}/>
             <div className={'rateText'}>
                 <h1>How did we do?</h1>
                 <p>

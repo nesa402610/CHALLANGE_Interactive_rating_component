@@ -4,7 +4,7 @@ import logo from './images/illustration-thank-you.svg'
 const StepTwo = ({rate}) => {
     return (
         <>
-            <img src={logo} className={'logo'}/>
+            <img alt={''} src={logo} className={'logo'}/>
             <div className={'rateSelected'}>
                 You selected {rate} out of 5
             </div>
