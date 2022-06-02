@@ -1,38 +1,129 @@
-.App {
-  text-align: center;
+:root {
+    --col-primary: hsl(25, 97%, 53%);
+    --col-light-Grey: hsl(217, 12%, 63%);
+    --col-med-Gray: hsl(216, 12%, 54%);
+    --col-dark-Blue: hsl(213, 19%, 18%);
+    --col-verydark-Blue: hsl(216, 12%, 8%);
+    --fw-bold: 700;
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+html, body, #root {
+    height: 100%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+#root {
+    display: flex;
+    align-items: center;
+    background-color: var(--col-verydark-Blue);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.container {
+    width: 1440px;
+    margin: auto;
 }
 
-.App-link {
-  color: #61dafb;
+* {
+    box-sizing: border-box;
+    font-weight: 400;
+    color: white;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.rateFrame {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 375px;
+    background-color: var(--col-dark-Blue);
+    padding: 2rem;
+    border-radius: 2rem;
+}
+
+h1 {
+    font-size: 1.5rem;
+    margin: .5rem 0;
+}
+
+p {
+    font-size: 15px;
+    margin: 0;
+    line-height: 1.5;
+    color: var(--col-light-Grey);
+}
+
+.rateLine {
+    display: flex;
+    justify-content: space-between;
+}
+
+.rateItem {
+    display: flex;
+    padding: .5rem;
+    border-radius: 100%;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    opacity: .5;
+    background-color: var(--col-med-Gray);
+}
+
+.rateItem:hover {
+    opacity: 1;
+    background-color: var(--col-light-Grey);
+}
+
+.rateItem.Active {
+    background-color: var(--col-primary);
+    opacity: 1;
+}
+
+.btn {
+    background-color: var(--col-primary);
+    color: white;
+    outline: none;
+    padding: .5rem;
+    border-radius: 20rem;
+    border: 1px solid black;
+    text-transform: uppercase;
+}
+
+.btn:hover {
+    background-color: white;
+    color: var(--col-primary);
+}
+
+.rateStar {
+    color: var(--col-primary);
+    background-color: var(--col-med-Gray);
+    display: flex;
+    padding: .5rem;
+    border-radius: 100%;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+}
+
+.rateEndText {
+    text-align: center;
+}
+
+h1 {
+    font-weight: 700
+}
+
+.rateSelected {
+    display: flex;
+    justify-content: center;
+    color: var(--col-primary);
+    padding: .5rem;
+    background-color: var(--col-med-Gray);
+    border-radius: 20rem;
+}
+
+.logo {
+    display: flex;
+    flex-direction: column;
 }
