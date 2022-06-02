@@ -28,7 +28,7 @@ const StepOne = ({nextStep}) => {
             <div className={'rateLine'}>
                 {ratesArr.map(rateEl =>
                     <div key={rateEl}
-                         className={'rateItem' + (rate == rateEl ? ' Active' : '')}
+                         className={'rateItem' + (+rate === +rateEl ? ' Active' : '')}
                          data-value={rateEl}
                          onClick={e => rateHandler(e)}>
                         {rateEl}
